@@ -13,15 +13,47 @@ public class RockPaperSissorsEvaluator {
      * @return the respective winning move
      */
     public String getWinningMove(String handSign) {
-        return null;
+        String rock = "rock";
+        String paper = "paper";
+        String sci = "scissor";
+
+        if (handSign.equalsIgnoreCase(rock)) {
+            return paper;
+        }
+        if (handSign.equalsIgnoreCase(paper)) {
+            return sci;
+        }
+        if (handSign.equalsIgnoreCase(sci)) {
+            return rock;
+        }
+        else{
+            return null;
+        }
     }
+
 
     /**
      * @param handSign a string representative of a hand sign
      * @return the respective losing move
      */
     public String getLosingMove(String handSign) {
-        return null;
+        String rock = "rock";
+        String paper = "paper";
+        String sci = "scissor";
+
+        if (handSign.equalsIgnoreCase(rock)) {
+            return sci;
+        }
+        if (handSign.equalsIgnoreCase(paper)) {
+            return rock;
+        }
+        if (handSign.equalsIgnoreCase(sci)) {
+            return paper;
+        }
+        else{
+            return null;
+        }
+
     }
 
     /**
@@ -30,6 +62,24 @@ public class RockPaperSissorsEvaluator {
      * @return a string representative of the winning hand sign between the two players
      */
     public String getWinner(String handSignOfPlayer1, String handSignOfPlayer2) {
-        return null;
+        String rock = "rock";
+        String paper = "paper";
+        String sci = "scissor";
+
+        if (handSignOfPlayer1.equalsIgnoreCase(rock) & handSignOfPlayer2.equalsIgnoreCase(rock)) {
+            return sci;
+        }
+        if (handSignOfPlayer1.equalsIgnoreCase(paper)) {
+            return rock;
+        }
+        if (handSignOfPlayer1.equalsIgnoreCase(sci)) {
+            return paper;
+        }
+        else{
+            return null;
+        }
+
     }
-}
+
+    }
+
