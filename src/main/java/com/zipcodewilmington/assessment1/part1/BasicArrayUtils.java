@@ -28,8 +28,8 @@ public class BasicArrayUtils {
      * @return the last element in the array
      */
     public static String getLastElement(String[] stringArray) {
-        String sS = Arrays.toString(stringArray);
-     return sS.substring(sS.lastIndexOf(" ")+1);
+        String lastElement = stringArray[stringArray.length - 1];
+        return lastElement;
 
     }
 
@@ -39,7 +39,8 @@ public class BasicArrayUtils {
      * @return the second to last element in the array
      */
     public static String getSecondToLastElement(String[] stringArray) {
-        String sS = Arrays.toString(stringArray);
-        return  sS.substring(sS.lastIndexOf(" " ));
+
+        return  stringArray[stringArray.length - 2];
+
     }
 }
