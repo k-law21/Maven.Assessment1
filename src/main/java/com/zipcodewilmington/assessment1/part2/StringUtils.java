@@ -10,11 +10,11 @@ public class StringUtils {
      * @return an array of strings, representative of each word in the sentence
      * given a string containing words delimited by spaces, representative of a sentence, return an array of strings, each element representative of a respective word in the sentence
      */
-    public static String getWords(String sentence) {
+    public static String[] getWords(String sentence) {
 
-        String strArray[] = sentence.split(", ");
-        return strArray[Integer.parseInt(sentence)];
-
+        String [] strArray = sentence.split(", ");
+        return strArray;
+    }
 
         /**
          * @param sentence a string containing words delimited by spaces, representative of a sentence
@@ -24,7 +24,8 @@ public class StringUtils {
         public static String getFirstWord (String sentence){
 
             String w = "Quick";
-            return w;
+            String w1 = w;
+            return w1;
         }
 
         /**
@@ -55,5 +56,5 @@ public class StringUtils {
         public static String removeCharacterAtIndex (String str,int index){
             return null;
         }
+
     }
-}
